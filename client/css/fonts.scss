@@ -8,19 +8,24 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
   font-size: 56px;
+  font-weight: bold;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   line-height: 55px;
 }
 
 h2 {
   margin-top: 0;
+  font-weight: bold;
   margin-bottom: 24px;
   font-size: 24px;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  margin-top: 0;
 }
 
 h4 {
@@ -34,7 +39,7 @@ h5, h6 {
 p, li {
   font-size: 20px;
   margin-bottom: 24px;
-  line-height: 24px;
+  line-height: 28px;
   margin-top: 0;
   color: $grey-2;
 }

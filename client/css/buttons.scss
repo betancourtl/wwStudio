@@ -26,7 +26,9 @@
 }
 
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-light,
+.btn-solid {
   text-transform: capitalize;
   color: #fff;
   font-size: 20px;
@@ -52,5 +54,23 @@
   }
   &:active {
     background-color: $secondary-1;
+  }
+}
+
+.btn-solid {
+  background-color: $secondary-1;
+  &:hover,
+  &:active {
+    background-color: darken($secondary-1, 5%);
+    color: $white;
+  }
+}
+
+.btn-light {
+  background-color: $light-grey;
+  color: $grey-1;
+  &:hover,
+  &:active {
+    background-color: darken($light-grey, 5%);
   }
 }
