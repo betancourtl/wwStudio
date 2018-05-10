@@ -8,7 +8,6 @@ import Home from './pages/Home';
 import NotFound from './pages/Auth/NotFound';
 
 // Analytics
-import withAnalytics from './components/Analytics';
 
 class Routes extends Component {
   render() {

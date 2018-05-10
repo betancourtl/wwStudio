@@ -1,7 +1,8 @@
 @import './settings';
+@import './mixins';
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700');
 
-h1, h2, h3, h4, h5, h6, p {
+*, h1, h2, h3, h4, h5, h6, p, li, a {
   line-height: 1;
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -50,4 +51,36 @@ li a {
 
 small {
   font-size: 16px;
+}
+
+@include sm-mq {
+  h1 {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5, h6 {
+    font-size: 16px;
+  }
+
+  p, li {
+    font-size: 20px;
+  }
+
+  small {
+    font-size: 14px;
+  }
+
 }

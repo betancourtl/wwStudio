@@ -1,6 +1,26 @@
+@import "./settings";
+
 @mixin no-outline() {
   &:active,
   &:focus {
     outline: none;
+  }
+}
+
+@mixin sm-mq {
+  @media only screen and (min-width: $sm-mq * 1px) and (max-width: $md-mq * 1px) {
+    @content
+  }
+}
+
+@mixin md-mq {
+  @media only screen and (min-width: $md-mq * 1px) and (max-width: $lg-mq * 1px) {
+    @content
+  }
+}
+
+@mixin lg-mq {
+  @media only screen and (min-width: $lg-mq * 1px) {
+    @content
   }
 }

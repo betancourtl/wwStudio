@@ -1,19 +1,33 @@
 @import '../../css/settings';
+@import '../../css/mixins';
 @import '../../css/colors';
-
-.section {
-  padding: $base * 12px 0;
-}
 
 // info icon component
 .icon-container {
-  padding: $base * 7px 0;
   text-align: center;
   img {
     margin-bottom: $base * 3px;
   }
   p {
     margin-bottom: 0;
+  }
+}
+
+@include sm-mq {
+  .icon-container {
+    padding: $base * 3px 0;
+  }
+}
+
+@include md-mq {
+  .icon-container {
+    padding: $base * 4px 0;
+  }
+}
+
+@include lg-mq {
+  .icon-container {
+    padding: $base * 7px 0;
   }
 }
 
@@ -53,6 +67,34 @@
   }
 }
 
+@include sm-mq {
+  .review {
+    .review-avatar-container {
+      flex-direction: column;
+    }
+
+    .review-position {
+      margin-top: 8px;
+    }
+
+    .review-text {
+      margin-top: 9px;
+    }
+  }
+}
+
+@include md-mq {
+  .icon-container {
+    padding: $base * 4px 0;
+  }
+}
+
+@include lg-mq {
+  .icon-container {
+    padding: $base * 7px 0;
+  }
+}
+
 //social icons component
 .social-icons {
   margin: 0;
@@ -83,8 +125,47 @@
   }
 }
 
-.home-page {
-  margin: $base * 5px auto;
+// section 1
+@include sm-mq {
+  .section {
+    padding: $base * 5px 0;
+  }
+
+  .header {
+    margin-top: $base * 1px;
+  }
+
+  .home-page {
+    margin-top: $base * 2px;
+  }
+}
+
+@include md-mq {
+  .section {
+    padding: $base * 7px 0;
+  }
+
+  .header {
+    margin-top: $base * 2px;
+  }
+
+  .home-page {
+    margin-top: $base * 3px;
+  }
+}
+
+@include lg-mq {
+  .section {
+    padding: $base * 12px 0;
+  }
+
+  .header {
+    margin-top: $base * 3px;
+  }
+
+  .home-page {
+    margin-top: $base * 5px;
+  }
 }
 
 .header-links {
@@ -109,18 +190,33 @@
   justify-content: flex-end;
 }
 
-.header-row {
-  margin-bottom: 56px;
-}
-
 // section 1
-
-.section1 {
-
+.section-1-text {
+  margin-bottom: $base * 3px;
 }
 
-.section-1-text {
-  margin-top: $base * 3px;
+
+@include sm-mq {
+  .section-1-text {
+    margin-top: $base * 5px;
+
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+@include md-mq {
+  .section-1-text {
+    margin-top: $base * 4px;
+  }
+}
+
+@include lg-mq {
+  .section-1-text {
+    margin-top: $base * 7px;
+  }
 }
 
 .section-1-image {
@@ -128,26 +224,60 @@
 }
 
 // section 2
-.section-2 {
+.section-2-outer-section {
   background-color: #f2f4f7;
+}
+
+.section-2 {
   margin-top: $base * -2px;
 }
 
-.section-2-customer-heading {
-  margin-bottom: $base * 7px;
+@include sm-mq {
+  .section-2-customer-heading {
+    margin-bottom: $base * 3px;
+  }
+}
+
+@include md-mq {
+  .section-2-customer-heading {
+    margin-bottom: $base * 4px;
+  }
+}
+
+@include lg-mq {
+  .section-2-customer-heading {
+    margin-bottom: $base * 7px;
+  }
 }
 
 // section-3
-.section-3 {
+.section-3-outer-section {
   background-color: #e6eaf0;
+}
 
-  .team-img {
-    margin-top: $base * 10px;
+.section-3 {
+  @include sm-mq {
+    .team-img {
+      margin-top: $base * 5px;
+    }
+  }
+
+  @include md-mq {
+    .team-img {
+      margin-top: $base * 8px;
+    }
+  }
+
+  @include lg-mq {
+    .team-img {
+      margin-top: $base * 10px;
+    }
   }
 }
 
 // footer
-.footer {
+
+.footer-outer-section{
   background: url("../../assets/footer-bg.jpg") center/cover;
 }
 
