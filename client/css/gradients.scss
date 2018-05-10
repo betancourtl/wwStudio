@@ -1,0 +1,27 @@
+@import "./colors";
+
+@mixin blue-teal-gradient() {
+  background-image: linear-gradient(
+      to right,
+      $tertiary-1 0%,
+      $primary-2 50%,
+      $secondary-1 100%
+  );
+}
+
+@mixin purple-blue-gradient() {
+  background-image: linear-gradient(
+      to right,
+      $tertiary-1 0%,
+      $secondary-1 100%
+  );
+}
+
+@mixin darkPurple-blue-gradient() {
+  background-image: linear-gradient(
+      to right,
+      $tertiary-1 0%,
+      $primary-1 50%
+      $secondary-1 100%
+  );
+}

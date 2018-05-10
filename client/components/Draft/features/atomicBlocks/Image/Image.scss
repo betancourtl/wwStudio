@@ -1,0 +1,96 @@
+// Todo [] fix css names
+#settings {
+  position: fixed;
+  right: 0;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-wrapper {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.settings-wrapper label {
+  color: #fff;
+}
+
+.layout-1__image:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .layout-1 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.layout-1 .layout-1__image {
+  align-items: center;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 550px) {
+  .layout-1::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  .layout-1 > .layout-1__image {
+    position: relative;
+    float: left;
+    height: auto;
+    padding: 5px;
+    align-items: initial;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px #777;
+    border-radius: 5px;
+    box-sizing: inherit;
+    margin: 0 10px;
+  }
+
+  .layout-1.float-right > .layout-1__image {
+    float: right;
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.focus-button {
+  visibility: hidden;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 0 5px #888;
+}
+
+.image-wrapper:hover .focus-button {
+  visibility: visible;
+}

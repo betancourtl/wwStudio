@@ -1,0 +1,13 @@
+.row *[class*=col-]:first-of-type {
+  padding-left: 0;
+}
+
+.row *[class*=col-]:last-of-type {
+  padding-right: 0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}

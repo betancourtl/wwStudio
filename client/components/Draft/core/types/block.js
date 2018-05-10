@@ -1,0 +1,12 @@
+export const H1 = 'header-one';
+export const H2 = 'header-two';
+export const H3 = 'header-three';
+export const H4 = 'header-four';
+export const H5 = 'header-five';
+export const H6 = 'header-six';
+export const BLOCKQUOTE = 'blockquote';
+export const UL = 'unordered-list-item';
+export const OL = 'ordered-list-item';
+export const CODE_BLOCK = 'code-block';
+export const UNSTYLED = 'unstyled';
+export const ATOMIC = 'atomic';

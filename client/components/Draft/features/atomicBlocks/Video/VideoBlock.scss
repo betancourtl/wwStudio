@@ -1,0 +1,14 @@
+.media-component-video-wrapper {
+  position: relative;
+  padding-bottom: 56.2%;
+  flex-basis: 100%;
+  clear: both;
+}
+
+.media-component-video-wrapper__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

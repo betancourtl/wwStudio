@@ -1,0 +1,56 @@
+@import "./settings";
+@import "./gradients";
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+}
+
+// sizes
+.btn-lg {
+  width: $base * 32px;
+  height: $base * 8px;
+}
+
+.btn-md {
+  width: $base * 26px;
+  height: $base * 7px;
+}
+
+.btn-sm {
+  width: $base * 18px;
+  height: $base * 5px;
+}
+
+.btn-primary,
+.btn-secondary {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+  line-height: $base * 4px;
+}
+
+.btn-primary {
+  @include purple-blue-gradient();
+  &:hover {
+    @include blue-teal-gradient();
+  }
+  &:active {
+    background-color: $tertiary-1;
+  }
+}
+
+.btn-secondary {
+  background-color: $grey-1;
+  &:hover {
+    background-color: transparent;
+    border: 2px solid $grey-1;
+    color: $grey-1;
+  }
+  &:active {
+    background-color: $secondary-1;
+  }
+}

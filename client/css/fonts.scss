@@ -1,0 +1,48 @@
+@import './settings';
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700');
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  line-height: 55px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5, h6 {
+  font-size: 16px;
+}
+
+p, li {
+  font-size: 20px;
+  margin-bottom: 24px;
+  line-height: 24px;
+  margin-top: 0;
+  color: $grey-2;
+}
+
+li a {
+  text-decoration: none;
+}
+
+small {
+  font-size: 16px;
+}

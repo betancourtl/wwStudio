@@ -1,0 +1,47 @@
+@import '../../css/settings';
+@import '../../css/colors';
+
+.section {
+  margin: $base * 12px;
+}
+
+.home-page {
+  margin: $base * 5px auto;
+}
+
+.header-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: $base * 1px;
+  list-style-type: none;
+
+  li {
+    padding-right: $base * 2px;
+    a {
+      color: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+}
+
+.header-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-row {
+  margin-bottom: 56px;
+}
+
+// section 1
+.section-1-text {
+  margin-top: $base * 3px;
+}
+
+.section-1-image {
+  box-shadow: 0 2px 5px $primary-1;
+}
+
+// section 2
