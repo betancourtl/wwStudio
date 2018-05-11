@@ -9,12 +9,16 @@ const Header = () => {
       <Container>
         <Row className="header">
           <Col
+            xs={12}
             sm={12}
             lg={6}
           >
             <img src={logo} alt="" />
           </Col>
-          <Col lg={4} className="hide-xs show-lg">
+          <Col
+            lg={4}
+            className="hide-xs show-lg"
+          >
             <ul className="header-links">
               <li><a href="#">Tour</a></li>
               <li><a href="#">Case Studies</a></li>

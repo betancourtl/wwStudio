@@ -11,6 +11,8 @@ const Section1 = () => {
         <Row>
           <Col
             xs={12}
+            sm={12}
+            md={12}
             lg={5}
             className="section-1-text"
           >
@@ -31,6 +33,8 @@ const Section1 = () => {
           </Col>
           <Col
             xs={12}
+            sm={12}
+            md={12}
             lg={7}
           >
             <img

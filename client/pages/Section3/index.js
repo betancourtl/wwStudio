@@ -10,7 +10,14 @@ const Section3 = () => {
     >
       <Container>
         <Row className="section section-3">
-          <Col lg={12} lgCenter className="text-center">
+          <Col
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            lgCenter
+            className="text-center"
+          >
             <h1>Our Awesome Team</h1>
             <h2 className="primary-1">
               We are bag full of digital wizards

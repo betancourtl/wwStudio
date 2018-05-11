@@ -7,6 +7,12 @@
   }
 }
 
+@mixin xs-mq {
+  @media only screen and (max-width: $sm-mq * 1px) {
+    @content
+  }
+}
+
 @mixin sm-mq {
   @media only screen and (min-width: $sm-mq * 1px) and (max-width: $md-mq * 1px) {
     @content

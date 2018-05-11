@@ -18,45 +18,84 @@ const Section2 = () => {
     >
       <Container>
         <Row className="section section-2">
-          <Col lg={12} className="text-center">
+          <Col
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            className="text-center"
+          >
             <h1>Milestones of every project we take</h1>
             <h2 className="primary-1">Don’t let your customers to abandon your
               website with first 3 seconds</h2>
           </Col>
-          <Col sm={12} md={6} lg={3}>
+          <Col
+            xs={12}
+            sm={12}
+            md={6}
+            lg={3}
+          >
             <InfoIcon
               src={icon1}
               title="Evaluate your business"
               text="we will figure out where you stand right now and what competition you are facing in the market"
             />
           </Col>
-          <Col sm={12} md={6} lg={3}>
+          <Col
+            xs={12}
+            sm={12}
+            md={6}
+            lg={3}
+          >
             <InfoIcon
               src={icon2}
               title="Evaluate your business"
               text="we will figure out where you stand right now and what competition you are facing in the market"
             />
           </Col>
-          <Col sm={12} md={6} lg={3}>
+          <Col
+            xs={12}
+            sm={12}
+            md={6}
+            lg={3}
+          >
             <InfoIcon
               src={icon3}
               title="Evaluate your business"
               text="we will figure out where you stand right now and what competition you are facing in the market"
             />
           </Col>
-          <Col sm={12} md={6} lg={3}>
+          <Col
+            xs={12}
+            sm={12}
+            md={6}
+            lg={3}
+          >
             <InfoIcon
               src={icon4}
               title="Evaluate your business"
               text="we will figure out where you stand right now and what competition you are facing in the market"
             />
           </Col>
-          <Col xs={12} className="text-center">
+          <Col
+            xs={12}
+            sm={12}
+            md={12}
+            lg={12}
+            className="text-center"
+          >
             <h2 className="section-2-customer-heading">
               What our customers are saying about us?
             </h2>
           </Col>
-          <Col md={10} mdOffset={1} lg={5} lgOffset={1}>
+          <Col
+            xs={12}
+            sm={12}
+            md={10}
+            mdOffset={1}
+            lg={5}
+            lgOffset={1}
+          >
             <Review
               src={person1}
               name="Kimberly Garret"
@@ -64,7 +103,13 @@ const Section2 = () => {
               text="Mei at idque theophrastus, cum cu utinam perfecto conceptam, pro doctus corrumpit no. Liber labores has ad. Suas percipit inciderint quo ea. Quo an mutat patrioque. An nam virtute persecuti. Te per etiam tacimates persequeris, ius ei simul graece pertinax, eos amet modo dignissim id."
             />
           </Col>
-          <Col md={10} mdOffset={1} lg={5}>
+          <Col
+            xs={12}
+            sm={12}
+            md={10}
+            mdOffset={1}
+            lg={5}
+          >
             <Review
               src={person2}
               name="Kimberly Garret"

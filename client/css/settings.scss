@@ -1,6 +1,6 @@
 $base: 8; // using 8 point grid for spacings.
 $gutter: $base * 3;
-$half-gutter: $gutter / 2 * 1px;
+$half-gutter: ($gutter / 2) * 1px;
 $sm-mq: 400;
 $md-mq: 768;
 $lg-mq: 1200;

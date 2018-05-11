@@ -13,6 +13,12 @@
   }
 }
 
+@include xs-mq {
+  .icon-container {
+    padding: $base * 3px 0;
+  }
+}
+
 @include sm-mq {
   .icon-container {
     padding: $base * 3px 0;
@@ -64,6 +70,22 @@
 
   .review-text {
     margin-top: 12px;
+  }
+}
+
+@include xs-mq {
+  .review {
+    .review-avatar-container {
+      flex-direction: column;
+    }
+
+    .review-position {
+      margin-top: 8px;
+    }
+
+    .review-text {
+      margin-top: 9px;
+    }
   }
 }
 
@@ -126,6 +148,22 @@
 }
 
 // section 1
+
+@include xs-mq {
+  .section {
+    padding: $base * 5px 0;
+  }
+
+  .header {
+    margin-top: $base * 1px;
+    margin-bottom: $base * 1px;
+  }
+
+  .home-page {
+    margin-top: $base * 2px;
+  }
+}
+
 @include sm-mq {
   .section {
     padding: $base * 5px 0;
@@ -133,6 +171,7 @@
 
   .header {
     margin-top: $base * 1px;
+    margin-bottom: $base * 1px;
   }
 
   .home-page {
@@ -147,6 +186,7 @@
 
   .header {
     margin-top: $base * 2px;
+    margin-bottom: $base * 1px;
   }
 
   .home-page {
@@ -161,6 +201,7 @@
 
   .header {
     margin-top: $base * 3px;
+    margin-bottom: $base * 4px;
   }
 
   .home-page {
@@ -195,10 +236,20 @@
   margin-bottom: $base * 3px;
 }
 
+@include xs-mq {
+  .section-1-text {
+    margin-top: $base * 2px;
+
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
 
 @include sm-mq {
   .section-1-text {
-    margin-top: $base * 5px;
+    margin-top: $base * 2px;
 
     button {
       display: block;
@@ -209,13 +260,13 @@
 
 @include md-mq {
   .section-1-text {
-    margin-top: $base * 4px;
+    margin-top: $base * 3px;
   }
 }
 
 @include lg-mq {
   .section-1-text {
-    margin-top: $base * 7px;
+    margin-top: $base * 10px;
   }
 }
 
@@ -230,6 +281,12 @@
 
 .section-2 {
   margin-top: $base * -2px;
+}
+
+@include xs-mq {
+  .section-2-customer-heading {
+    margin-bottom: $base * 3px;
+  }
 }
 
 @include sm-mq {
@@ -256,6 +313,12 @@
 }
 
 .section-3 {
+  @include xs-mq {
+    .team-img {
+      margin-top: $base * 5px;
+    }
+  }
+
   @include sm-mq {
     .team-img {
       margin-top: $base * 5px;
@@ -276,8 +339,7 @@
 }
 
 // footer
-
-.footer-outer-section{
+.footer-outer-section {
   background: url("../../assets/footer-bg.jpg") center/cover;
 }
 
@@ -316,3 +378,60 @@
 .footer-address {
   margin-bottom: 0;
 }
+
+@include xs-mq {
+  .footer-btn-1-container,
+  .footer-btn-2-container {
+    margin: $base * 2px 0;
+    align-items: center;
+
+    button, p {
+      margin-bottom: $base * 1px;
+    }
+  }
+
+  .footer-address {
+    text-align: center;
+    margin-bottom: $base * 4px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@include sm-mq {
+  .footer-btn-1-container,
+  .footer-btn-2-container {
+    margin: $base * 2px 0;
+    align-items: center;
+
+    button, p {
+      margin-bottom: $base * 1px;
+    }
+  }
+
+  .footer-address {
+    text-align: center;
+    margin-bottom: $base * 4px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@include md-mq {
+  .footer-btn-1-container,
+  .footer-btn-2-container {
+    margin: $base * 6px 0;
+  }
+}
+
+@include lg-mq {
+  .footer-btn-1-container,
+  .footer-btn-2-container {
+    margin: $base * 12px 0;
+  }
+}
+

@@ -12,25 +12,42 @@ const Footer = () => {
         className="footer-overlay"
         fluid
       >
-
         <Container>
           <Row className="footer">
-            <Col lg={12} className="section">
+            <Col
+              xs={12}
+              sm={12}
+              md={12}
+              lg={12}
+              className="section"
+            >
               <Row className="no-margin">
-                <Col lg={12} className="text-center footer-header">
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  lg={12}
+                  className="text-center footer-header"
+                >
                   <h1 className="color-white">
                     Let us wow you
                   </h1>
                   <h2 className="color-white">
-                    We are bag full of digital wizards
+                    Ready to take it a step further?
                   </h2>
-                  <h3 className="color-white">
+                  <p className="color-white">
                     Let’s start talking about your project or idea and find out
                     how W
                     Studio can help your business grow.
-                  </h3>
+                  </p>
                 </Col>
-                <Col lg={6} className="footer-btn-1-container">
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={6}
+                  className="footer-btn-1-container"
+                >
                   <div className="text-center">
                     <button
                       className="btn btn-lg btn-light">
@@ -39,7 +56,12 @@ const Footer = () => {
                     <p className="color-white">hello@wvstudio.org</p>
                   </div>
                 </Col>
-                <Col lg={6} className="footer-btn-2-container">
+                <Col
+                  xs={12}
+                  md={6}
+                  lg={6}
+                  className="footer-btn-2-container"
+                >
                   <div className="text-center">
                     <button
                       className="btn btn-lg btn-solid">
@@ -48,7 +70,12 @@ const Footer = () => {
                     <p className="color-white">1-800-234-5432</p>
                   </div>
                 </Col>
-                <Col lg={6}>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={6}
+                >
                   <p className="color-white footer-address">
                     Our Fancy office<br />
                     4351 Chicago Avenue<br />
@@ -56,7 +83,12 @@ const Footer = () => {
                     93230<br />
                   </p>
                 </Col>
-                <Col lg={6}>
+                <Col
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={6}
+                >
                   <ul className="color-white social-icons">
                     <li>
                       <i
