@@ -26,7 +26,7 @@ const config = {
   output: {
     path: DIST_DIR,
     filename: '[name].[chunkhash].js',
-    publicPath: '/wwStudio/'
+    publicPath: '/wwStudio'
   },
   module: {
     rules: [
@@ -36,7 +36,7 @@ const config = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'], { root: ROOT_DIR }),
+    new CleanWebpackPlugin(['docs'], { root: ROOT_DIR }),
     new HtmlWebpackPlugin({ template: TEMPLATE_FILE }),
     new webpack.DefinePlugin({ 'process.env': ENV_VARS }),
     css.prod.extract

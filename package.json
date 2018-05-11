@@ -7,6 +7,7 @@
     "dev": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.dev ]]; then . .env.dev; fi && nodemon ./server/index.js --watch ./server",
     "prod": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.prod ]]; then . .env.prod; fi && npm run build && node ./server/index.js",
     "build": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.prod ]]; then . .env.prod; fi && webpack -p --config ./config/webpack.prod.js",
+    "deploy": "npm run build && git add . && git commit -m 'Build' && git push",
     "test-client": "jest --watch",
     "test-server": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.test ]]; then . .env.test; fi && nodemon --exec 'mocha'"
   },
