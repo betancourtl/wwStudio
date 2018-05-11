@@ -14,7 +14,7 @@ class Routes extends Component {
     return (
       <App>
         <Switch>
-          <Route path="/" component={Home} exact />
+          <Route path="/wwStudio" component={Home} />
           <Route component={NotFound} />
         </Switch>
       </App>
