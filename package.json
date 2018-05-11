@@ -1,24 +1,18 @@
 {
-  "name": "react-mobx-boilerplate",
+  "name": "wwstudio",
   "version": "1.0.0",
-  "description": "react-mobx-boilerplate",
+  "description": "wwstudio",
   "main": "index.js",
   "scripts": {
     "dev": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.dev ]]; then . .env.dev; fi && nodemon ./server/index.js --watch ./server",
     "prod": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.prod ]]; then . .env.prod; fi && npm run build && node ./server/index.js",
     "build": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.prod ]]; then . .env.prod; fi && webpack -p --config ./config/webpack.prod.js",
     "test-client": "jest --watch",
-    "test-server": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.test ]]; then . .env.test; fi && nodemon --exec 'mocha'",
-    "docker:remove": "docker rm /react-mobx-boilerplate",
-    "docker:build": "docker build -t webdeveloperpr/react-mobx-boilerplate .",
-    "docker:prod": "docker run --name react-mobx-boilerplate -p 80:80 -e NODE_ENV=production webdeveloperpr/react-mobx-boilerplate",
-    "docker:build:prod": "npm run docker:remove & npm run docker:build &&  npm run docker:prod",
-    "knex:dev": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.dev ]]; then . .env.dev; fi && knex",
-    "knex:prod": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.prod ]]; then . .env.prod; fi && knex"
+    "test-server": "if [[ -e .env ]]; then . .env; fi && if [[ -e .env.test ]]; then . .env.test; fi && nodemon --exec 'mocha'"
   },
   "keywords": [
     "webpack",
-    "react-mobx-boilerplate"
+    "wwstudio"
   ],
   "author": "Luis Betancourt <webdeveloperpr@gmail.com> (https://github.com/webdeveloperpr)",
   "license": "MIT",

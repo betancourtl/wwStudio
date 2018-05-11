@@ -26,7 +26,7 @@ const config = {
   output: {
     path: DIST_DIR,
     filename: '[name].[chunkhash].js',
-    publicPath: '/'
+    publicPath: '/wwStudio/'
   },
   module: {
     rules: [
