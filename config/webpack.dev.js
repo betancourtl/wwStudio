@@ -37,7 +37,7 @@ const config = {
   module: {
     rules: [
       js.loader,
-      file.loader,
+      ...file.loader,
       ...css.dev.loader,
     ]
   },
